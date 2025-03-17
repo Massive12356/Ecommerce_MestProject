@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '../assets/images/logo.png'
 import { UserIcon,HeartIcon,MagnifyingGlassIcon,ShoppingCartIcon }  from "@heroicons/react/24/outline";
+import { Link } from 'react-router';
 
 const Navbar = () => {
   return (
@@ -10,18 +11,18 @@ const Navbar = () => {
       </div>
 
       <div className="flex flex-row w-[30%] justify-around">
-        <span className="font-medium cursor-pointer hover:text-[#B88E2F]">
+        <Link to={'/'} className="font-medium cursor-pointer hover:text-[#B88E2F]">
           Home
-        </span>
-        <span className="font-medium cursor-pointer hover:text-[#B88E2F]">
+        </Link>
+        <Link  to={'/shop'} className="font-medium cursor-pointer hover:text-[#B88E2F]">
           Shop
-        </span>
-        <span className="font-medium cursor-pointer hover:text-[#B88E2F]">
+        </Link>
+        <Link to={'/about'} className="font-medium cursor-pointer hover:text-[#B88E2F]">
           About
-        </span>
-        <span className="font-medium cursor-pointer hover:text-[#B88E2F]">
+        </Link>
+        <Link to={'/contact'} className="font-medium cursor-pointer hover:text-[#B88E2F]">
           Contact
-        </span>
+        </Link>
       </div>
 
       <div className="flex flex-row w-[20%] justify-between">
